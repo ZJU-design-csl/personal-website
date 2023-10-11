@@ -172,10 +172,24 @@
   }
   
   @media (max-width: 600px) {
-    .research-projects {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: stretch;
+    .portfolio-items {
+      grid-template-columns: 1fr; /* 将列数改为1 */
+    }
+  
+    .item {
+      text-align: left; /* 左对齐 */
+    }
+  
+    .item p {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .item img {
+      width: 100%; /* 图片宽度占满父容器 */
+      height: auto; /* 根据宽度自动调整高度 */
+      margin-left: 0;
+      margin-bottom: 10px;
     }
   }
 
