@@ -31,43 +31,50 @@
     margin-bottom: 5px;
   }
   
-  /* 导航栏样式 */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 10px 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* 导航栏样式 */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navigation li {
+  margin-right: 30px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 媒体查询 */
+@media (max-width: 600px) {
+  .logo {
+    display: none;
   }
-  
-  .logo img {
-    height: 40px;
-    margin-left: 20px;
-  }
-  
-  .navigation {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-  }
-  
-  .navigation li {
-    margin-right: 30px;
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
+}
+
   /* 个人信息部分样式 */
   #about {
     padding: 80px 20px; /* 添加左右间距为 20px */
@@ -139,6 +146,7 @@
   .project p {
     margin-right: 50px;
     margin-left: 50px;
+    text-align: justify;
   }
 
   .project h5 {
