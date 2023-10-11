@@ -228,6 +228,7 @@
 /* 默认情况下，信息横向排列 */
 #contact {
   padding: 40px 0;
+  background-color: #f3f3f3;
 }
 
 .contact-form {
