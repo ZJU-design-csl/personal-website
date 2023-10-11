@@ -1,0 +1,276 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 全局样式 */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* 头部样式 */
+  header {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /* 导航栏样式 */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-left: 20px;
+  }
+  
+  .navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .navigation li {
+    margin-right: 30px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* 关于部分样式 */
+  #about {
+    padding: 80px 20px; /* 添加左右间距为 20px */
+  }
+  
+
+  #about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .personal-info,
+  .skills,
+  .background {
+    flex: 1;
+    padding: 0 20px; /* 添加左右间距为 20px */
+  }
+  
+  .skills ul {
+    list-style: none;
+  }
+  
+  .mypicture img {
+    height: 240px;
+    margin-left: 20px;
+  }
+
+  /* 研究部分样式 */
+  #research {
+    background-color: #e4e4e4;
+    padding: 80px 0;
+  }
+  
+  #research h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .research-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .project {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .project h5 {
+    font-weight:lighter;
+  }
+
+  .project h6 {
+    font-weight:lighter;
+  }
+
+  .project img {
+    height: 300px;
+    width: 450px;
+    margin-left: 20px;
+  }
+
+  /* 作品集部分样式 */
+  #portfolio {
+    padding: 80px 0;
+  }
+  
+  #portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .item {
+    text-align: center;
+  }
+  
+  .item p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .item h5 {
+    font-weight:lighter;
+  }
+
+  .item h6 {
+    font-weight:lighter;
+  }
+
+  .item p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .item img {
+    height: 300px;
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* 联系部分样式 */
+  #contact {
+    padding: 40px 0;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: medium;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .social-media {
+    text-align: center;
+  }
+  
+  .social-media p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .social-media img {
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* 页脚*/
+/* Apply black background color to the footer */
+footer {
+    background-color: black;
+  }
+  
+  /* Center the text vertically and horizontally within the footer */
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust the height as needed */
+  }
+  
+  /* Style the text within the footer */
+  .footer-content p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  
+  .contact-form {
+    /* 根据需要添加样式 */
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* 鼠标悬停效果 */
+  .hover-effect {
+    filter: grayscale(100%);
+    transition: filter 0.1s ease;
+  }
+  
+  .hover-effect:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* 附加修改 */
+  /* 在此行下方添加自定义样式 */
