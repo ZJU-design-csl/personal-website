@@ -103,7 +103,7 @@
 
   /* 研究部分样式 */
   #research {
-    background-color: #e4e4e4;
+    background-color: #f3f3f3;
     padding: 80px 0;
   }
   
@@ -221,6 +221,8 @@
     margin-left: 20px;
     margin-bottom: 10px;
   }
+  
+
   
   /* 联系部分样式 */
 /* 默认情况下，信息横向排列 */
