@@ -68,7 +68,7 @@
     font-weight: bold;
   }
   
-  /* 关于部分样式 */
+  /* 个人信息部分样式 */
   #about {
     padding: 80px 20px; /* 添加左右间距为 20px */
   }
@@ -118,6 +118,14 @@
     align-items: flex-start;
   }
   
+  @media (max-width: 600px) {
+    .research-projects {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+
   .project {
     flex: 1;
     text-align: center;
@@ -163,6 +171,14 @@
     grid-gap: 20px;
   }
   
+  @media (max-width: 600px) {
+    .research-projects {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+
   .item {
     text-align: center;
   }
@@ -193,37 +209,59 @@
   }
   
   /* 联系部分样式 */
-  #contact {
-    padding: 40px 0;
-  }
-  
+/* 默认情况下，信息横向排列 */
+#contact {
+  padding: 40px 0;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media p {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.social-media img {
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+
+/* 在显示宽度小于或等于600像素时，改为纵向排列 */
+@media (max-width: 600px) {
   #contact h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: medium;
-  }
-  
-  .contact-form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .social-media {
-    text-align: center;
-  }
-  
-  .social-media p {
-    margin-right: 50px;
-    margin-left: 50px;
   }
 
-  .social-media img {
-    height: 150px;
-    width: 150px;
-    margin-left: 20px;
+  .contact-form {
+    grid-template-columns: 1fr; /* 将列数改为1 */
+  }
+
+  .social-media p {
+    margin-right: 0;
     margin-bottom: 10px;
   }
+  
+  .social-media img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
   /* 页脚*/
 /* Apply black background color to the footer */
@@ -247,30 +285,5 @@ footer {
   }
 
 
+
   
-  .contact-form {
-    /* 根据需要添加样式 */
-  }
-  
-  .social-media {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .social-media a {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  /* 鼠标悬停效果 */
-  .hover-effect {
-    filter: grayscale(100%);
-    transition: filter 0.1s ease;
-  }
-  
-  .hover-effect:hover {
-    filter: grayscale(0%);
-  }
-  
-  /* 附加修改 */
-  /* 在此行下方添加自定义样式 */
